@@ -1,0 +1,5 @@
+[user]
+	name = Chris Brodt
+	email = chris@path.to
+[core]
+	excludesfile = /Users/cbrodt/.global_gitignore

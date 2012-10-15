@@ -126,6 +126,7 @@ let g:debuggerMaxDepth = 5
 imap <C-o> <ESC>:call PhpDoc()<CR>i
 "Set tags file
 autocmd BufRead,BufNew *.php setlocal tags=php-tags,tags
+autocmd FileType php setlocal noeol
 "Build php  tags
 nmap <silent><F5> :!bash make_tags.sh<CR>
 "Setup :make for PHP
@@ -143,6 +144,7 @@ autocmd BufRead,BufNew *.rb setlocal ts=2
 autocmd FileType ruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby let g:rubycomplete_rails = 1
 autocmd FileType ruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby setlocal noeol
 "this is for RVM to work...
 set shell=bash
 

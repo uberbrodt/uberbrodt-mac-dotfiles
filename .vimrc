@@ -155,6 +155,9 @@ let g:ruby_debugger_progname = 'mvim'
 
 autocmd BufRead *.rb set makeprg=ruby\ -c\ %
 
+"[ConqueTerm]---------------------------------------------------------------------------------
+let g:ConqueTerm_ReadUnfocused = 1
+
 "[LaTeX]--------------------------------------------------------------------------------------
 "make grep always return the filename in it's results. for vim-latexsuite
 set grepprg=grep\ -nH\ $*
